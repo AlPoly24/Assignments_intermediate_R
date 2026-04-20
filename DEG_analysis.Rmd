@@ -5,8 +5,8 @@ author: "Alen Lovric"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 params:
-  data_file: ../data/counts.txt
-  metadata_file: ../data/metadata.txt
+  data_file: /Users/alkinoos.polychronopoulos/Assignment_2_intermediate_R/counts.txt
+  metadata_file: /Users/alkinoos.polychronopoulos/Assignment_2_intermediate_R/metadata.txt
   condition_column: condition
   covariate: patient
   control_group: 'C'
@@ -66,6 +66,7 @@ Pipeline depends on the following packages: 'tidyverse', 'DESeq2', 'DT' and 'ggr
 # Load required libraries
 library(pacman)
 p_load('tidyverse', 'DESeq2', 'DT', 'ggrepel')
+#install.packages('BiocManager')
 ```
 <br>
 <br>
@@ -190,5 +191,4 @@ if (params$plot_volcano) {
   # ggplotly(p)
 }
 ```
-
 
